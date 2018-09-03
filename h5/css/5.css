@@ -1,0 +1,25 @@
+.icon-list {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.icon-list__item {
+  margin-bottom: 1.28rem;
+  width: 33%;
+  text-align: center;
+}
+
+.icon-list__name {
+  margin-top: 0.42667rem;
+  color: #88889C;
+  font-size: 0.42667rem;
+  text-align: center;
+}
+
+

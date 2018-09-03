@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+/**
+ * Default Theme
+ */
+
+/**
+ * Mixes a color with white. It's different from lighten()
+ *
+ * @param {color} $color
+ * @param {number (percentage)} $percent [The amout of white to be mixed in]
+ * @return {color}
+ *
+ * @example
+ *   .element {
+ *     background-color: tint(#6ecaa6 , 40%);
+ *   }
+ *
+ *   // CSS Output
+ *   .element {
+ *     background-color: #a8dfc9;
+ *   }
+ */
+
+/* The Color of O2Team Brand */
+
+/* Color */
+
+/* Color Palette */
+
+/* Text Color */
+
+/* Link */
+
+/* 背景色 */
+
+/* 边框颜色 */
+
+/* 图标颜色 */
+
+/* Border Radius */
+
+/* 透明度 */
+
+/* Font */
+
+/* Line Height */
+
+/* 水平间距 */
+
+/* 垂直间距 */
+
+/* 图标尺寸 */
+
+/* z-index */
+
+/* timing function */
+
+/**
+ * CSS cubic-bezier timing functions
+ * http://bourbon.io/docs/#timing-functions
+ */
+
+.at-timelineitem {
+  position: relative;
+  padding: 0 0 0.256rem;
+}
+
+.at-timelineitem__content {
+  margin-left: 0.85333rem;
+  min-height: 1.19467rem;
+  color: #333;
+  font-size: 0.59733rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.at-timelineitem__content--sub {
+  color: #666;
+  font-size: 0.512rem;
+}
+
+.at-timelineitem__dot,
+.at-timelineitem__icon {
+  position: absolute;
+  left: 0;
+  top: 0.10667rem;
+  width: 0.68267rem;
+  height: 0.68267rem;
+  font-size: 0;
+  text-align: left;
+  vertical-align: middle;
+  box-sizing: border-box;
+  background-color: #FFF;
+  z-index: 1;
+}
+
+.at-timelineitem__dot {
+  left: -0.02133rem;
+}
+
+.at-timelineitem__dot::after {
+  content: '';
+  margin-top: 0.10667rem;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 0.512rem;
+  height: 0.512rem;
+  border: 1PX solid transparent;
+  border-radius: 50%;
+  border-color: #78A4FA;
+}
+
+.at-timelineitem__dot.at-timelineitem__icon::after {
+  display: none;
+}
+
+.at-timelineitem__icon {
+  left: -0.08533rem;
+  color: #78A4FA;
+}
+
+.at-timelineitem--green .at-timelineitem__icon {
+  color: #13CE66;
+}
+
+.at-timelineitem--green .at-timelineitem__dot::after {
+  border-color: #13CE66;
+}
+
+.at-timelineitem--red .at-timelineitem__icon {
+  color: #FF4949;
+}
+
+.at-timelineitem--red .at-timelineitem__dot::after {
+  border-color: #FF4949;
+}
+
+.at-timelineitem--yellow .at-timelineitem__icon {
+  color: #FFC82C;
+}
+
+.at-timelineitem--yellow .at-timelineitem__dot::after {
+  border-color: #FFC82C;
+}
+
+.at-timelineitem__tail {
+  position: absolute;
+  top: 0.384rem;
+  bottom: -0.21333rem;
+  left: 0.21333rem;
+  border-left: 0.04267rem solid #e2ecf4;
+}
+
+.at-timeline .at-timelineitem:last-child .at-timelineitem__tail {
+  display: none;
+}
+
+.at-timeline--pending .at-timelineitem:nth-last-child(2) .at-timelineitem__content {
+  min-height: 1.70667rem;
+}
+
+.at-timeline--pending .at-timelineitem:nth-last-child(2) .at-timelineitem__tail {
+  border-left-style: dotted;
+}
+
+
+
